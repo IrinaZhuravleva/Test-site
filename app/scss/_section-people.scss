@@ -1,0 +1,88 @@
+.section__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.section-people {
+    &__img {
+        width: 294px;
+        height: 294px;
+        flex-shrink: 0;
+        padding-right: 32px;
+        overflow: hidden;
+        object-fit: cover;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    &__title {
+        margin-top: 24px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: #000;
+    }
+
+    &__subtitle {
+        margin-bottom: 24px;
+        font-family: Helvetica Neue,
+        Arial,
+        sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 170%;
+        color: $text;
+    }
+
+    &__time {
+        margin-bottom: 12px;
+        font-family: Helvetica Neue,
+        Arial,
+        sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 170%;
+        color: #000;
+    }
+
+    &__desc {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 170%;
+    }
+
+    &__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 32px;
+        &:nth-child(1) {
+            .section-people__img {
+                border-radius: 50% 0% 0% 0%;
+            }
+        }
+        &:nth-child(2) {
+            .section-people__img {
+                border-radius: 50%;
+            }
+        }
+        &:nth-child(4) {
+            .section-people__img {
+                border-radius: 0% 50% 0% 0%;
+            }
+        }
+    }  
+}

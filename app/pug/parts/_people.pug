@@ -1,0 +1,15 @@
+-
+    var people = [{'img': "images/1.jpg", 'title': "Izabella8", 'subtitle': "Global Infrastructure Architect", 'time': "08:30 – 09:00", 'desc': "Qui eos a quia dolorem sapiente deserunt ut expedita sunt. Quia perspiciatis quo excepturi id dolor voluptatem aut adipisci."},
+    {'img': "images/2.jpg", 'title': "Izabella8", 'subtitle': "Global Infrastructure Architect", 'time': "08:30 – 09:00", 'desc': "Qui eos a quia dolorem sapiente deserunt ut expedita sunt. Quia perspiciatis quo excepturi id dolor voluptatem aut adipisci."},
+    {'img': "images/3.jpg", 'title': "Izabella8", 'subtitle': "Global Infrastructure Architect", 'time': "08:30 – 09:00", 'desc': "Qui eos a quia dolorem sapiente deserunt ut expedita sunt. Quia perspiciatis quo excepturi id dolor voluptatem aut adipisci."},
+    {'img': "images/4.jpg", 'title': "Izabella8", 'subtitle': "Global Infrastructure Architect", 'time': "08:30 – 09:00", 'desc': "Qui eos a quia dolorem sapiente deserunt ut expedita sunt. Quia perspiciatis quo excepturi id dolor voluptatem aut adipisci."}]
+
+each item, index in people 
+    .section-people__item
+        .section-people__img
+            img(src= item.img alt='')
+        .section-people__text
+            .section-people__title= item.title
+            .section-people__subtitle= item.subtitle
+            .section-people__time= item.time
+            .section-people__desc= item.desc
