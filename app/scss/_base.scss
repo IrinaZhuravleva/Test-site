@@ -63,3 +63,34 @@ section {
   margin-left: auto;
   overflow-x: hidden;
 }
+
+input {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 170%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 170%;
+  }
+}
+
+button {
+  margin-top: 30px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  line-height: 110%;
+  color: #000;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
